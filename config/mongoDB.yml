@@ -1,0 +1,24 @@
+Default: &defaults
+  user: BottleStory
+  password: BottleStory
+  host: localhost
+  port: 27017
+  database: BottleStory
+  poolsize: 10
+
+Development:
+  <<: *defaults
+
+Test:
+  database: BottleStory_test
+  <<: *defaults
+
+Staging:
+  database: BottleStory_staging
+  poolsize: 100
+  <<: *defaults
+
+Production:
+  database: BottleStory_production
+  poolsize: 100
+  <<: *defaults

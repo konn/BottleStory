@@ -1,0 +1,19 @@
+!!!
+<html>
+    <head
+        <title>#{pageTitle pc} - Bottle Story
+        ^{pageHead pc}
+    <body
+     $maybe u <- mu
+       <form #sign action=@{AuthR LogoutR} method="GET"
+         @#{userIdent $ snd u} としてログインしています。 #
+         <input type="submit" value="Logout"
+     $nothing
+       <form #sign action=@{AuthR LoginR} method="GET"
+         ログインしていません。
+         <input type="submit" value="Login"
+
+     <h1
+          <a href=@{RootR}
+            <img alt="Bottle Story" src=@{imgA}
+     ^{pageBody pc}

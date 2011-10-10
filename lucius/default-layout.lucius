@@ -1,0 +1,12 @@
+body {
+    font-family: sans-serif;
+}
+
+#sign {
+  font-size: small;
+  text-align: right;
+}
+
+h1 {
+    text-align: center
+}
